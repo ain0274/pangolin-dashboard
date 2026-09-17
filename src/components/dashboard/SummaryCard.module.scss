@@ -1,0 +1,30 @@
+.summarySection{
+    width: 100%;
+
+    .summaryCard{
+        width: 100%;
+        height: 460px;
+    
+        background: #fff;
+        padding: 25px;
+        border: 1px solid #E4E5E6;
+        border-radius: 10px;
+        box-sizing: border-box;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        margin-bottom: 50px;
+
+        h3{
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .chart{
+            width: 100%;
+            height: 310px;
+        }
+    }
+}

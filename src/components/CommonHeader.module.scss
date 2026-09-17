@@ -1,0 +1,105 @@
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $outline-color;
+
+    &__top{
+        display: flex;
+        height: 60px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        border-bottom: 1px solid #E5E5E5;
+        
+        .rightSection{
+            height: 100%;
+            display: flex;
+            
+            .member{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 20px;
+                border-right: 1px solid #E5E5E5;
+                
+                p{
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+                .state{
+                    font-size: 13px;
+                    color: #2E74D3;
+                }
+            }
+
+            .account{
+                width: 90px;
+                padding:  0 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-right: 1px solid #E5E5E5;
+
+                .selectWrapper {
+                    position: relative;
+                    display: inline-flex;
+                    align-items: center;
+                    
+                    select{
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        
+                        padding: 4px 20px 4px 8px;
+                        font-size: 12px;
+                        background-color: transparent;
+                        border: none;
+                        outline-style: none;
+                        cursor: pointer;
+                    }
+                    .arrowIcon {
+                        position: absolute;
+                        right: 0; 
+                        pointer-events: none;
+                        height: auto;
+                    }
+    
+                    option{
+                        font-size: 12px;
+                    }
+                }
+
+            }
+    
+            .logout{
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &__bottom{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 50px;
+        padding: 10px 20px;
+
+        .homeBtn{
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            background: $select-color-green;
+            padding: 0 25px;
+            border-radius: 50px;
+
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+        }
+    }
+}
